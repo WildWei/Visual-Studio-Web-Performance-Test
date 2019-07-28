@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="bafeede0-6bec-4899-8f13-5c59aebafc79" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.03bc328d-15e2-43ba-a834-bca906ded6ea.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="11609645-f000-41cf-8d1b-2b3d1590b500" Version="1.1" Url="{{URL}}/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="{{URL}}/?guccounter=1" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="dfe71f00-8392-4e91-a825-fe2c30944c24" Version="1.1" Url="{{WebServer2}}/v1/consentRecord" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/?guccounter=1" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="consentTypes" Value="iab%2CoathVendorsConsent" RecordedValue="iab%2CoathVendorsConsent" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="oathVendorIds" Value="106" RecordedValue="106" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="f80a76e1-09d9-4c9a-9901-0ee8f50f5bd8" Version="1.1" Url="{{WebServer3}}/sdarla/php/client.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/?guccounter=1" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="debug" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="f" Value="794026701" RecordedValue="794026701" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="l" Value="MAST{dest:tgtMAST,azn:970x250};flex:both}" RecordedValue="MAST{dest:tgtMAST,azn:970x250};flex:both}" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="amp;npv" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="" Value="amp" RecordedValue="amp" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="_" Value="1563690142417" RecordedValue="1563690142417" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="013b0807-9ba7-4991-aa8f-8bcebe8b77e2" Version="1.1" Url="{{WebServer4}}/v2/public/yql" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/?guccounter=1" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="yhlVer" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlClient" Value="rapid" RecordedValue="rapid" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlS" Value="794026701" RecordedValue="794026701" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlUA" Value="ie11" RecordedValue="ie11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlCT" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlBTMS" Value="1563690142746" RecordedValue="1563690142746" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlClientVer" Value="3.53.7" RecordedValue="3.53.7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlRnd" Value="LqIo1ui6AOM2aPYj" RecordedValue="LqIo1ui6AOM2aPYj" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlCompressed" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+          <FormPostHttpBody>
+            <FormPostParameter Name="q" Value="select * from x where a = '{&quot;bp&quot;:{&quot;_pl&quot;:&quot;1&quot;,&quot;A_v&quot;:&quot;3.53.7&quot;,&quot;A_cn&quot;:&quot;EVERGREEN-PROD&quot;,&quot;_bt&quot;:&quot;rapid&quot;,&quot;A_pr&quot;:&quot;https&quot;,&quot;A_tzoff&quot;:&quot;8&quot;,&quot;A_cnf&quot;:&quot;{\&quot;spaceid\&quot;:794026701,\&quot;pageview_on_init\&quot;:true,\&quot;client_only\&quot;:1}&quot;},&quot;r&quot;:[{&quot;t&quot;:&quot;pv&quot;,&quot;s&quot;:&quot;794026701&quot;,&quot;pp&quot;:{&quot;A_sid&quot;:&quot;Ea3HFfXBWF1w16JY&quot;,&quot;_w&quot;:&quot;movies.yahoo.com.tw/?guccounter=1&quot;,&quot;pt&quot;:&quot;2&quot;,&quot;_ga&quot;:&quot;GA1.4.428893641.1563690133&quot;,&quot;_rx&quot;:&quot;2kd9foem9iw.1lka4pqc&amp;v=1&quot;,&quot;_guc&quot;:&quot;AQEBAQFdNUleCEIf5wRi&amp;s=AQAAAGyK_OgW&amp;g=XTQEpw&quot;,&quot;bx&quot;:&quot;cqg07slej814t&amp;b=3&amp;s=ti&quot;,&quot;A_&quot;:&quot;1&quot;,&quot;A_sr&quot;:&quot;2462x1385&quot;,&quot;A_vr&quot;:&quot;2462x1308&quot;,&quot;A_do&quot;:&quot;&quot;,&quot;A_ib&quot;:&quot;0x0&quot;,&quot;A_ob&quot;:&quot;0x0&quot;,&quot;A_srr&quot;:&quot;0.7799999713897705&quot;},&quot;_ts&quot;:&quot;1563690142&quot;,&quot;_ms&quot;:&quot;745&quot;,&quot;lv&quot;:[]}],&quot;yrid&quot;:&quot;&quot;,&quot;optout&quot;:&quot;0&quot;,&quot;nol&quot;:&quot;0&quot;}'" RecordedValue="select * from x where a = '{&quot;bp&quot;:{&quot;_pl&quot;:&quot;1&quot;,&quot;A_v&quot;:&quot;3.53.7&quot;,&quot;A_cn&quot;:&quot;EVERGREEN-PROD&quot;,&quot;_bt&quot;:&quot;rapid&quot;,&quot;A_pr&quot;:&quot;https&quot;,&quot;A_tzoff&quot;:&quot;8&quot;,&quot;A_cnf&quot;:&quot;{\&quot;spaceid\&quot;:794026701,\&quot;pageview_on_init\&quot;:true,\&quot;client_only\&quot;:1}&quot;},&quot;r&quot;:[{&quot;t&quot;:&quot;pv&quot;,&quot;s&quot;:&quot;794026701&quot;,&quot;pp&quot;:{&quot;A_sid&quot;:&quot;Ea3HFfXBWF1w16JY&quot;,&quot;_w&quot;:&quot;movies.yahoo.com.tw/?guccounter=1&quot;,&quot;pt&quot;:&quot;2&quot;,&quot;_ga&quot;:&quot;GA1.4.428893641.1563690133&quot;,&quot;_rx&quot;:&quot;2kd9foem9iw.1lka4pqc&amp;v=1&quot;,&quot;_guc&quot;:&quot;AQEBAQFdNUleCEIf5wRi&amp;s=AQAAAGyK_OgW&amp;g=XTQEpw&quot;,&quot;bx&quot;:&quot;cqg07slej814t&amp;b=3&amp;s=ti&quot;,&quot;A_&quot;:&quot;1&quot;,&quot;A_sr&quot;:&quot;2462x1385&quot;,&quot;A_vr&quot;:&quot;2462x1308&quot;,&quot;A_do&quot;:&quot;&quot;,&quot;A_ib&quot;:&quot;0x0&quot;,&quot;A_ob&quot;:&quot;0x0&quot;,&quot;A_srr&quot;:&quot;0.7799999713897705&quot;},&quot;_ts&quot;:&quot;1563690142&quot;,&quot;_ms&quot;:&quot;745&quot;,&quot;lv&quot;:[]}],&quot;yrid&quot;:&quot;&quot;,&quot;optout&quot;:&quot;0&quot;,&quot;nol&quot;:&quot;0&quot;}'" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+      </DependentRequests>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1.movie_id" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?movie_id=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam5815.movie_id" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?movie_id=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="18" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam5816.movie_id" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?movie_id=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Comment CommentText="進入電影首頁" />
+    <Request Method="GET" Guid="d72013bb-f25f-4e76-9d77-9bb6470bdd75" Version="1.1" Url="{{URL}}/api/v1/areas_by_movie_theater" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="{{URL}}/?guccounter=1" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="movie_id" Value="10125" RecordedValue="10125" CorrelationBinding="{{QueryStringParam5815.movie_id}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4a3d5af2-dab3-4c2b-bd03-c85423b709f0" Version="1.1" Url="{{URL}}/api/v1/areas_by_movie_theater" ThinkTime="12" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="{{URL}}/?guccounter=1" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="movie_id" Value="9116" RecordedValue="9116" CorrelationBinding="{{QueryStringParam5816.movie_id}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4f62f256-6307-4572-b096-197413323bb8" Version="1.1" Url="{{URL}}/movietime_result.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="8a7ce693-9333-4296-839a-16d47b39489e" Version="1.1" Url="{{WebServer5}}/nosdk/wj/v1/getAds.do" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="locale" Value="en_us" RecordedValue="en_us" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="agentVersion" Value="205" RecordedValue="205" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="adTrackingEnabled" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="adUnitCode" Value="bdd2eb9c-51e8-404a-921c-ae7090fc5fda" RecordedValue="bdd2eb9c-51e8-404a-921c-ae7090fc5fda" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="apiKey" Value="QS4CB5BPWQKCYKVVSR89" RecordedValue="QS4CB5BPWQKCYKVVSR89" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="gdpr" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="euconsent" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="publisherUrl" Value="{{WebServer6}}" RecordedValue="https%3A%2F%2Fmovies.yahoo.com.tw" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="caps" Value="16" RecordedValue="16" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="cb" Value="JSONPCallback0" RecordedValue="JSONPCallback0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="7e7072f2-b8fb-4dfa-8415-58d28ebf587d" Version="1.1" Url="{{URL}}/ajax/pc/get_schedule_by_movie" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="movie_id" Value="{{$HIDDEN1.movie_id}}" RecordedValue="9116" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="date" Value="2019-07-21" RecordedValue="2019-07-21" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="area_id" Value="28" RecordedValue="28" CorrelationBinding="{{QueryStringParam6077.area_id}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="theater_id" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="datetime" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="movie_type_id" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="c48d15bb-4497-4a7b-9cca-d963dc5a633a" Version="1.1" Url="{{WebServer7}}/ys/QS4CB5BPWQKCYKVVSR89_UENSaWdodFJhaWw=_1505802814110" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="cb" Value="ygscb" RecordedValue="ygscb" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="87945678-73a9-4ff0-bf4f-8c389c694c73" Version="1.1" Url="{{WebServer8}}/connect/xd_arbiter.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="version" Value="44" RecordedValue="44" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="abd80371-600f-4b57-87e0-94e5d2cbdff2" Version="1.1" Url="{{WebServer4}}/v2/public/yql" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="yhlVer" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlClient" Value="rapid" RecordedValue="rapid" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlS" Value="794026777" RecordedValue="794026777" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlUA" Value="ie11" RecordedValue="ie11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlCT" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlBTMS" Value="1563690355725" RecordedValue="1563690355725" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlClientVer" Value="3.53.7" RecordedValue="3.53.7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlRnd" Value="0G7QpKlkIPo8s9cc" RecordedValue="0G7QpKlkIPo8s9cc" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yhlCompressed" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+          <FormPostHttpBody>
+            <FormPostParameter Name="q" Value="select * from x where a = '{&quot;bp&quot;:{&quot;_pl&quot;:&quot;1&quot;,&quot;A_v&quot;:&quot;3.53.7&quot;,&quot;A_cn&quot;:&quot;EVERGREEN-PROD&quot;,&quot;_R&quot;:&quot;{{URL}}/?guccounter=1&quot;,&quot;_bt&quot;:&quot;rapid&quot;,&quot;A_pr&quot;:&quot;https&quot;,&quot;A_tzoff&quot;:&quot;8&quot;,&quot;A_cnf&quot;:&quot;{\&quot;spaceid\&quot;:794026777,\&quot;pageview_on_init\&quot;:true,\&quot;client_only\&quot;:1}&quot;},&quot;r&quot;:[{&quot;t&quot;:&quot;pv&quot;,&quot;s&quot;:&quot;794026777&quot;,&quot;pp&quot;:{&quot;A_sid&quot;:&quot;TMaHOvtDpzriwyIh&quot;,&quot;_w&quot;:&quot;movies.yahoo.com.tw/movietime_result.html?movie_id=9116&amp;area_id=28&quot;,&quot;pt&quot;:&quot;3&quot;,&quot;_ga&quot;:&quot;GA1.4.428893641.1563690133&quot;,&quot;_rx&quot;:&quot;2kd9foem9iw.1lka4pqc&amp;v=1&quot;,&quot;_guc&quot;:&quot;AQEBAQFdNUleCEIf5wRi&amp;s=AQAAAGyK_OgW&amp;g=XTQEpw&quot;,&quot;bx&quot;:&quot;cqg07slej814t&amp;b=3&amp;s=ti&quot;,&quot;A_&quot;:&quot;1&quot;,&quot;A_sr&quot;:&quot;2182x1227&quot;,&quot;A_vr&quot;:&quot;2182x1159&quot;,&quot;A_do&quot;:&quot;&quot;,&quot;A_ib&quot;:&quot;0x0&quot;,&quot;A_ob&quot;:&quot;0x0&quot;,&quot;A_srr&quot;:&quot;0.8800050020217895&quot;},&quot;_ts&quot;:&quot;1563690355&quot;,&quot;_ms&quot;:&quot;724&quot;,&quot;lv&quot;:[]}],&quot;yrid&quot;:&quot;&quot;,&quot;optout&quot;:&quot;0&quot;,&quot;nol&quot;:&quot;0&quot;}'" RecordedValue="select * from x where a = '{&quot;bp&quot;:{&quot;_pl&quot;:&quot;1&quot;,&quot;A_v&quot;:&quot;3.53.7&quot;,&quot;A_cn&quot;:&quot;EVERGREEN-PROD&quot;,&quot;_R&quot;:&quot;https://movies.yahoo.com.tw/?guccounter=1&quot;,&quot;_bt&quot;:&quot;rapid&quot;,&quot;A_pr&quot;:&quot;https&quot;,&quot;A_tzoff&quot;:&quot;8&quot;,&quot;A_cnf&quot;:&quot;{\&quot;spaceid\&quot;:794026777,\&quot;pageview_on_init\&quot;:true,\&quot;client_only\&quot;:1}&quot;},&quot;r&quot;:[{&quot;t&quot;:&quot;pv&quot;,&quot;s&quot;:&quot;794026777&quot;,&quot;pp&quot;:{&quot;A_sid&quot;:&quot;TMaHOvtDpzriwyIh&quot;,&quot;_w&quot;:&quot;movies.yahoo.com.tw/movietime_result.html?movie_id=9116&amp;area_id=28&quot;,&quot;pt&quot;:&quot;3&quot;,&quot;_ga&quot;:&quot;GA1.4.428893641.1563690133&quot;,&quot;_rx&quot;:&quot;2kd9foem9iw.1lka4pqc&amp;v=1&quot;,&quot;_guc&quot;:&quot;AQEBAQFdNUleCEIf5wRi&amp;s=AQAAAGyK_OgW&amp;g=XTQEpw&quot;,&quot;bx&quot;:&quot;cqg07slej814t&amp;b=3&amp;s=ti&quot;,&quot;A_&quot;:&quot;1&quot;,&quot;A_sr&quot;:&quot;2182x1227&quot;,&quot;A_vr&quot;:&quot;2182x1159&quot;,&quot;A_do&quot;:&quot;&quot;,&quot;A_ib&quot;:&quot;0x0&quot;,&quot;A_ob&quot;:&quot;0x0&quot;,&quot;A_srr&quot;:&quot;0.8800050020217895&quot;},&quot;_ts&quot;:&quot;1563690355&quot;,&quot;_ms&quot;:&quot;724&quot;,&quot;lv&quot;:[]}],&quot;yrid&quot;:&quot;&quot;,&quot;optout&quot;:&quot;0&quot;,&quot;nol&quot;:&quot;0&quot;}'" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="GET" Guid="5861c630-9763-4dee-873c-3b9b1b23384c" Version="1.1" Url="{{WebServer9}}/admax/adServe.do" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="cTag" Value="ad722181" RecordedValue="ad722181" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="brxdSectionId" Value="97017061" RecordedValue="97017061" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="brxdPublisherId" Value="28261959434" RecordedValue="28261959434" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ypubblob" Value="%7CG1v2oAAAAACMjLVd5eHIpE6ld6EQTl00BXQAB9zs%7C794026777%7CNP1%7C690355221" RecordedValue="%7CG1v2oAAAAACMjLVd5eHIpE6ld6EQTl00BXQAB9zs%7C794026777%7CNP1%7C690355221" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="req(url)" Value="https%3A//movies.yahoo.com.tw/movietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" RecordedValue="https%3A//movies.yahoo.com.tw/movietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="secure" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="brxdSiteId" Value="239061" RecordedValue="239061" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="dcn" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yadpos" Value="NP1" RecordedValue="NP1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="pos" Value="y402079" RecordedValue="y402079" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="csrtype" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ybkt" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="wd" Value="300" RecordedValue="300" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ht" Value="100" RecordedValue="100" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="u(id)" Value="4233684202bf47f089ad70939f57f2f5" RecordedValue="4233684202bf47f089ad70939f57f2f5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ua" Value="Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20WOW64%3B%20Trident/7.0%3B%20Touch%3B%20.NET4.0C%3B%20.NET4.0E%3B%20Tablet%20PC%202.0%3B%20rv%3A11.0%29%20like%20Gecko" RecordedValue="Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20WOW64%3B%20Trident/7.0%3B%20Touch%3B%20.NET4.0C%3B%20.NET4.0E%3B%20Tablet%20PC%202.0%3B%20rv%3A11.0%29%20like%20Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="of" Value="js" RecordedValue="js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="sd" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="e85a1149-cad7-450e-a3f8-3ac002958a17" Version="1.1" Url="{{WebServer9}}/admax/adServe.do" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="iso-8859-1" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="cTag" Value="ad903089" RecordedValue="ad903089" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="brxdSectionId" Value="97017061" RecordedValue="97017061" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="brxdPublisherId" Value="28261959434" RecordedValue="28261959434" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ypubblob" Value="%7CCtJp1gAAAACMjLVd5eHIpCy7d6EQTl00BXUAAU5A%7C794026777%7CLREC3%7C690356695" RecordedValue="%7CCtJp1gAAAACMjLVd5eHIpCy7d6EQTl00BXUAAU5A%7C794026777%7CLREC3%7C690356695" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="req(url)" Value="https%3A//movies.yahoo.com.tw/movietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" RecordedValue="https%3A//movies.yahoo.com.tw/movietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="secure" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="brxdSiteId" Value="239061" RecordedValue="239061" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="dcn" Value="brxd239061" RecordedValue="brxd239061" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="yadpos" Value="LREC3" RecordedValue="LREC3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="pos" Value="y402078" RecordedValue="y402078" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="csrtype" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ybkt" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="wd" Value="300" RecordedValue="300" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ht" Value="250" RecordedValue="250" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="u(id)" Value="4233684202bf47f089ad70939f57f2f5" RecordedValue="4233684202bf47f089ad70939f57f2f5" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ua" Value="Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20WOW64%3B%20Trident/7.0%3B%20Touch%3B%20.NET4.0C%3B%20.NET4.0E%3B%20Tablet%20PC%202.0%3B%20rv%3A11.0%29%20like%20Gecko" RecordedValue="Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20WOW64%3B%20Trident/7.0%3B%20Touch%3B%20.NET4.0C%3B%20.NET4.0E%3B%20Tablet%20PC%202.0%3B%20rv%3A11.0%29%20like%20Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="of" Value="js" RecordedValue="js" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="sd" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="abd8d80e-c40b-4097-a1c7-bb01b6cce0f7" Version="1.1" Url="{{WebServer10}}/pagead/html/r20190715/r20190131/zrt_lookup.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="6d82e19e-17c7-404b-a065-17f0c82a1f87" Version="1.1" Url="{{WebServer7}}/ja/ap/ssp_cookie_sync/apac.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <CorrelationExtractionRules>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam11711.p" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="?p=" />
+                <RuleParameter Name="EndsWith" Value="&amp;" />
+                <RuleParameter Name="Index" Value="0" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam11712.s" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="&amp;s=" />
+                <RuleParameter Name="EndsWith" Value="&amp;" />
+                <RuleParameter Name="Index" Value="0" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+            <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam11713.predirect" DisplayName="" Description="">
+              <RuleParameters>
+                <RuleParameter Name="StartsWith" Value="&amp;predirect=" />
+                <RuleParameter Name="EndsWith" Value="'" />
+                <RuleParameter Name="Index" Value="0" />
+                <RuleParameter Name="IgnoreCase" Value="False" />
+                <RuleParameter Name="UseRegularExpression" Value="False" />
+                <RuleParameter Name="HtmlDecode" Value="True" />
+                <RuleParameter Name="Required" Value="False" />
+              </RuleParameters>
+            </ExtractionRule>
+          </CorrelationExtractionRules>
+        </Request>
+        <Request Method="GET" Guid="54a4d69a-81bb-4fe8-b934-3077420f85c3" Version="1.1" Url="{{WebServer11}}/get-user-id" ThinkTime="4" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="ver" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="n" Value="38544" RecordedValue="38544" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="ts" Value="1563690357" RecordedValue="1563690357" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="sig" Value="8b3c93283d725d84" RecordedValue="8b3c93283d725d84" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="gdpr" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="gdpr_consent" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="{{URL}}/?guccounter=1" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam6077.area_id" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;amp;area_id=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="movie_id" Value="9116" RecordedValue="9116" CorrelationBinding="{{QueryStringParam1.movie_id}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="area_id" Value="28" RecordedValue="28" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="93d24c76-b8ec-41a8-8e5c-2c41d000d168" Version="1.1" Url="{{WebServer12}}/plugins/page.php" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="POST" Guid="78770fa2-9087-468f-a64e-46a3d1e80b1d" Version="1.1" Url="{{WebServer12}}/platform/plugin/tab/renderer/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{WebServer12}}/plugins/page.php?href={{WebServer13}}%2FYmovie%2F&amp;tabs=timeline&amp;width=300&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=762279463943866" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="config_json" Value="{&quot;app_id&quot;:&quot;762279463943866&quot;,&quot;href&quot;:&quot;{{WebServer12}}/Ymovie/&quot;,&quot;width&quot;:300,&quot;height&quot;:500,&quot;has_cta&quot;:true,&quot;has_small_header&quot;:false,&quot;has_adapt_container_width&quot;:true,&quot;has_cover&quot;:true,&quot;has_facepile&quot;:true,&quot;has_posts&quot;:false,&quot;tabs&quot;:&quot;timeline&quot;,&quot;can_personalize&quot;:false,&quot;is_xfbml&quot;:false,&quot;referer_uri&quot;:&quot;{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28&quot;}" RecordedValue="{&quot;app_id&quot;:&quot;762279463943866&quot;,&quot;href&quot;:&quot;https://www.facebook.com/Ymovie/&quot;,&quot;width&quot;:300,&quot;height&quot;:500,&quot;has_cta&quot;:true,&quot;has_small_header&quot;:false,&quot;has_adapt_container_width&quot;:true,&quot;has_cover&quot;:true,&quot;has_facepile&quot;:true,&quot;has_posts&quot;:false,&quot;tabs&quot;:&quot;timeline&quot;,&quot;can_personalize&quot;:false,&quot;is_xfbml&quot;:false,&quot;referer_uri&quot;:&quot;https://movies.yahoo.com.tw/movietime_result.html?movie_id=9116&amp;area_id=28&quot;}" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="key" Value="timeline" RecordedValue="timeline" CorrelationBinding="{{FormPostParam37.key}}" UrlEncode="True" />
+            <FormPostParameter Name="__user" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam38.__user}}" UrlEncode="True" />
+            <FormPostParameter Name="__a" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam39.__a}}" UrlEncode="True" />
+            <FormPostParameter Name="__dyn" Value="7xe6EiwgUnwn8K4osXWodo6C2i5U4e1qwyyUW3qi2K7E2vwXwvE3vx61cwYwmU1upE4W0OE2WxO2u0IobEa85ucG0nSUS1vw4Ugao1J8jw" RecordedValue="7xe6EiwgUnwn8K4osXWodo6C2i5U4e1qwyyUW3qi2K7E2vwXwvE3vx61cwYwmU1upE4W0OE2WxO2u0IobEa85ucG0nSUS1vw4Ugao1J8jw" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__req" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam40.__req}}" UrlEncode="True" />
+            <FormPostParameter Name="__be" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam41.__be}}" UrlEncode="True" />
+            <FormPostParameter Name="__pc" Value="PHASED:plugin_default_pkg" RecordedValue="PHASED:plugin_default_pkg" CorrelationBinding="{{FormPostParam42.__pc}}" UrlEncode="True" />
+            <FormPostParameter Name="dpr" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam43.dpr}}" UrlEncode="True" />
+            <FormPostParameter Name="__rev" Value="1000964653" RecordedValue="1000964653" CorrelationBinding="{{FormPostParam44.__rev}}" UrlEncode="True" />
+            <FormPostParameter Name="__s" Value="::zx1dp7" RecordedValue="::zx1dp7" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__sp" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam45.__sp}}" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="POST" Guid="51b42345-ced1-4cf9-a0c4-e1272d321fe4" Version="1.1" Url="{{WebServer12}}/platform/plugin/page/logging/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{WebServer12}}/plugins/page.php?href={{WebServer13}}%2FYmovie%2F&amp;tabs=timeline&amp;width=300&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=762279463943866" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="event_name" Value="page_plugin.tab.configured" RecordedValue="page_plugin.tab.configured" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="page_id" Value="161527590557550" RecordedValue="161527590557550" CorrelationBinding="{{FormPostParam46.page_id}}" UrlEncode="True" />
+            <FormPostParameter Name="tab" Value="timeline" RecordedValue="timeline" CorrelationBinding="{{FormPostParam47.tab}}" UrlEncode="True" />
+            <FormPostParameter Name="data[refererURL]" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" RecordedValue="https://movies.yahoo.com.tw/movietime_result.html?movie_id=9116&amp;area_id=28" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__user" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam48.__user}}" UrlEncode="True" />
+            <FormPostParameter Name="__a" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam49.__a}}" UrlEncode="True" />
+            <FormPostParameter Name="__dyn" Value="7xe6EiwgUnwn8K4osXWodo6C2i5U4e1qwyyUW3qi2K7E2vwXwvE3vx61cwYwmU1upE4W0OE2WxO2u0IobEa85ucG0nSUS1vw4Ugao1J8jw" RecordedValue="7xe6EiwgUnwn8K4osXWodo6C2i5U4e1qwyyUW3qi2K7E2vwXwvE3vx61cwYwmU1upE4W0OE2WxO2u0IobEa85ucG0nSUS1vw4Ugao1J8jw" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__req" Value="2" RecordedValue="2" CorrelationBinding="{{FormPostParam50.__req}}" UrlEncode="True" />
+            <FormPostParameter Name="__be" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam51.__be}}" UrlEncode="True" />
+            <FormPostParameter Name="__pc" Value="PHASED:plugin_default_pkg" RecordedValue="PHASED:plugin_default_pkg" CorrelationBinding="{{FormPostParam52.__pc}}" UrlEncode="True" />
+            <FormPostParameter Name="dpr" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam53.dpr}}" UrlEncode="True" />
+            <FormPostParameter Name="__rev" Value="1000964653" RecordedValue="1000964653" CorrelationBinding="{{FormPostParam54.__rev}}" UrlEncode="True" />
+            <FormPostParameter Name="__s" Value="::zx1dp7" RecordedValue="::zx1dp7" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__sp" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam55.__sp}}" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="POST" Guid="69e19214-e989-4c1b-aed8-5532e5aa353a" Version="1.1" Url="{{WebServer12}}/pages/call_to_action/fetch_dialog_data/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="{{WebServer12}}/plugins/page.php?href={{WebServer13}}%2FYmovie%2F&amp;tabs=timeline&amp;width=300&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=762279463943866" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="id" Value="1335666503143647" RecordedValue="1335666503143647" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="surface" Value="pagePlugin" RecordedValue="pagePlugin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="unit_type" Value="VIEWER" RecordedValue="VIEWER" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+          <FormPostHttpBody>
+            <FormPostParameter Name="__user" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam56.__user}}" UrlEncode="True" />
+            <FormPostParameter Name="__a" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam57.__a}}" UrlEncode="True" />
+            <FormPostParameter Name="__dyn" Value="7xe6EiwgUnwn8K4osXWodo6C2i5U4e1qwyyUW3qi2K7E2vwXwvE3vx61cwYwmU1upE4W0OE2WxO2u0IobEa85ucG0nSUS1vw4Ugao1J8jw" RecordedValue="7xe6EiwgUnwn8K4osXWodo6C2i5U4e1qwyyUW3qi2K7E2vwXwvE3vx61cwYwmU1upE4W0OE2WxO2u0IobEa85ucG0nSUS1vw4Ugao1J8jw" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__req" Value="3" RecordedValue="3" CorrelationBinding="{{FormPostParam58.__req}}" UrlEncode="True" />
+            <FormPostParameter Name="__be" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam59.__be}}" UrlEncode="True" />
+            <FormPostParameter Name="__pc" Value="PHASED:plugin_default_pkg" RecordedValue="PHASED:plugin_default_pkg" CorrelationBinding="{{FormPostParam60.__pc}}" UrlEncode="True" />
+            <FormPostParameter Name="dpr" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam61.dpr}}" UrlEncode="True" />
+            <FormPostParameter Name="__rev" Value="1000964653" RecordedValue="1000964653" CorrelationBinding="{{FormPostParam62.__rev}}" UrlEncode="True" />
+            <FormPostParameter Name="__s" Value="::zx1dp7" RecordedValue="::zx1dp7" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__sp" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam63.__sp}}" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam37.key" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ey&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;ta" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam38.__user" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ID&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;AC" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam39.__a" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam40.__req" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam41.__be" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam42.__pc" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="rt&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;pr" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam43.dpr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam44.__rev" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="on&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;rt" />
+            <RuleParameter Name="Index" Value="36" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam45.__sp" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam46.page_id" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ID&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;re" />
+            <RuleParameter Name="Index" Value="3" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam47.tab" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ey&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;ta" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam48.__user" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ID&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;AC" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam49.__a" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam50.__req" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="e5&quot;,&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;:&quot;\u" />
+            <RuleParameter Name="Index" Value="45" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam51.__be" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam52.__pc" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="rt&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;pr" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam53.dpr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam54.__rev" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="on&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;rt" />
+            <RuleParameter Name="Index" Value="36" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam55.__sp" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam56.__user" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ID&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;AC" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam57.__a" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam58.__req" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="e5&quot;,&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;:&quot;\u" />
+            <RuleParameter Name="Index" Value="46" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam59.__be" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam60.__pc" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="rt&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;pr" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam61.dpr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam62.__rev" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="on&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;rt" />
+            <RuleParameter Name="Index" Value="36" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam63.__sp" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam64.__a" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam65.__be" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam66.__pc" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="rt&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;pr" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam67.__req" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="e5&quot;,&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;:&quot;\u" />
+            <RuleParameter Name="Index" Value="47" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam68.__rev" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="on&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;rt" />
+            <RuleParameter Name="Index" Value="36" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam69.__sp" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam70.__user" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="ID&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;AC" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam71.dpr" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="or&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;lo" />
+            <RuleParameter Name="Index" Value="5" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam72.ph" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="se&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;,&quot;pk" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="href" Value="{{WebServer13}}%2FYmovie%2F" RecordedValue="https%3A%2F%2Fwww.facebook.com%2FYmovie%2F" CorrelationBinding="{{QueryStringParam6308.href}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tabs" Value="timeline" RecordedValue="timeline" CorrelationBinding="{{QueryStringParam6309.tabs}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="width" Value="300" RecordedValue="300" CorrelationBinding="{{QueryStringParam6310.width}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="height" Value="500" RecordedValue="500" CorrelationBinding="{{QueryStringParam6311.height}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="small_header" Value="false" RecordedValue="false" CorrelationBinding="{{QueryStringParam6312.small_header}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adapt_container_width" Value="true" RecordedValue="true" CorrelationBinding="{{QueryStringParam6313.adapt_container_width}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hide_cover" Value="false" RecordedValue="false" CorrelationBinding="{{QueryStringParam6314.hide_cover}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="show_facepile" Value="true" RecordedValue="true" CorrelationBinding="{{QueryStringParam6315.show_facepile}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="appId" Value="762279463943866" RecordedValue="762279463943866" CorrelationBinding="{{QueryStringParam6316.appId}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="75e633dd-0755-49dc-897c-ed10d26805a9" Version="1.1" Url="{{WebServer10}}/pagead/ads" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="ca-pub-6785382607161389" RecordedValue="ca-pub-6785382607161389" CorrelationBinding="{{QueryStringParam7242.client}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="output" Value="html" RecordedValue="html" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adk" Value="1812271804" RecordedValue="1812271804" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adf" Value="3025194257" RecordedValue="3025194257" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="lmt" Value="1563690357" RecordedValue="1563690357" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="plat" Value="1%3A32776%2C2%3A32776%2C8%3A32776%2C9%3A32776%2C16%3A8388608%2C30%3A1081344" RecordedValue="1%3A32776%2C2%3A32776%2C8%3A32776%2C9%3A32776%2C16%3A8388608%2C30%3A1081344" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="guci" Value="2.2.0.0.2.2.0.0" RecordedValue="2.2.0.0.2.2.0.0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="format" Value="0x0" RecordedValue="0x0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="url" Value="{{WebServer6}}%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" RecordedValue="https%3A%2F%2Fmovies.yahoo.com.tw%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ea" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="flash" Value="32.0.0" RecordedValue="32.0.0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="pra" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="wgl" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adsid" Value="NT" RecordedValue="NT" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dt" Value="1563690357422" RecordedValue="1563690357422" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bpp" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bdt" Value="2875" RecordedValue="2875" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fdt" Value="263" RecordedValue="263" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="idt" Value="263" RecordedValue="263" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="shv" Value="r20190715" RecordedValue="r20190715" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cbv" Value="r20190131" RecordedValue="r20190131" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="saldr" Value="aa" RecordedValue="aa" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="abxe" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="prev_fmts" Value="300x250" RecordedValue="300x250" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="nras" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="correlator" Value="5501723727073" RecordedValue="5501723727073" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="frm" Value="20" RecordedValue="20" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="pv" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_vid" Value="428893641.1563690133" RecordedValue="428893641.1563690133" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_sid" Value="1563690358" RecordedValue="1563690358" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_hid" Value="1395431867" RecordedValue="1395431867" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_fc" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="icsg" Value="176451633360" RecordedValue="176451633360" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dssz" Value="36" RecordedValue="36" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mdo" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mso" Value="33554434" RecordedValue="33554434" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_tz" Value="480" RecordedValue="480" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_his" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_java" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_h" Value="1227" RecordedValue="1227" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_w" Value="2182" RecordedValue="2182" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_ah" Value="1159" RecordedValue="1159" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_aw" Value="2182" RecordedValue="2182" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_cd" Value="24" RecordedValue="24" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_nplug" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_nmime" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adx" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ady" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="biw" Value="1462" RecordedValue="1462" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bih" Value="966" RecordedValue="966" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scr_x" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scr_y" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="eid" Value="151527002%2C151527011%2C151527211" RecordedValue="151527002%2C151527011%2C151527211" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="oid" Value="2" RecordedValue="2" CorrelationBinding="{{QueryStringParam6758.oid}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ref" Value="{{WebServer6}}%2F%3Fguccounter%3D1" RecordedValue="https%3A%2F%2Fmovies.yahoo.com.tw%2F%3Fguccounter%3D1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rx" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="eae" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fc" Value="912" RecordedValue="912" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="docm" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="brdim" Value="678%2C125%2C0%2C0%2C2182%2C%2C2182%2C1103%2C1491%2C966" RecordedValue="678%2C125%2C0%2C0%2C2182%2C%2C2182%2C1103%2C1491%2C966" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="vis" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rsz" Value="%7C%7Cs%7C" RecordedValue="%7C%7Cs%7C" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="abl" Value="NS" RecordedValue="NS" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fu" Value="16" RecordedValue="16" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bc" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ifi" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="uci" Value="a!1" RecordedValue="a!1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dtd" Value="283" RecordedValue="283" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="2b1bdd2d-2ddb-4df7-9b50-453c812558b7" Version="1.1" Url="{{WebServer10}}/pagead/ads" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="{{URL}}/movietime_result.html?movie_id=9116&amp;area_id=28" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="client" Value="ca-pub-6785382607161389" RecordedValue="ca-pub-6785382607161389" CorrelationBinding="{{QueryStringParam9190.client}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="output" Value="html" RecordedValue="html" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="h" Value="250" RecordedValue="250" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="slotname" Value="5366616521" RecordedValue="5366616521" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adk" Value="478338560" RecordedValue="478338560" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adf" Value="2844852103" RecordedValue="2844852103" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="w" Value="300" RecordedValue="300" CorrelationBinding="{{QueryStringParam9196.w}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="lmt" Value="1563690357" RecordedValue="1563690357" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="guci" Value="2.2.0.0.2.2.0.0" RecordedValue="2.2.0.0.2.2.0.0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="format" Value="300x250" RecordedValue="300x250" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="url" Value="{{WebServer6}}%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" RecordedValue="https%3A%2F%2Fmovies.yahoo.com.tw%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ea" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="flash" Value="32.0.0" RecordedValue="32.0.0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="hl" Value="zh-tw" RecordedValue="zh-tw" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="avail_w" Value="300" RecordedValue="300" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="wgl" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dt" Value="1563690357371" RecordedValue="1563690357371" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bpp" Value="51" RecordedValue="51" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bdt" Value="2824" RecordedValue="2824" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fdt" Value="112" RecordedValue="112" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="idt" Value="112" RecordedValue="112" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="shv" Value="r20190715" RecordedValue="r20190715" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="cbv" Value="r20190131" RecordedValue="r20190131" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="saldr" Value="aa" RecordedValue="aa" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="abxe" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="correlator" Value="5501723727073" RecordedValue="5501723727073" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="frm" Value="20" RecordedValue="20" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="pv" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_vid" Value="428893641.1563690133" RecordedValue="428893641.1563690133" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_sid" Value="1563690358" RecordedValue="1563690358" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_hid" Value="1395431867" RecordedValue="1395431867" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ga_fc" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="icsg" Value="176451633360" RecordedValue="176451633360" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dssz" Value="35" RecordedValue="35" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mdo" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="mso" Value="33554434" RecordedValue="33554434" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_tz" Value="480" RecordedValue="480" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_his" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_java" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_h" Value="1227" RecordedValue="1227" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_w" Value="2182" RecordedValue="2182" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_ah" Value="1159" RecordedValue="1159" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_aw" Value="2182" RecordedValue="2182" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_cd" Value="24" RecordedValue="24" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_nplug" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="u_nmime" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="adx" Value="1046" RecordedValue="1046" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ady" Value="1502" RecordedValue="1502" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="biw" Value="1462" RecordedValue="1462" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bih" Value="966" RecordedValue="966" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scr_x" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="scr_y" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="eid" Value="151527002%2C151527011%2C151527211" RecordedValue="151527002%2C151527011%2C151527211" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="oid" Value="2" RecordedValue="2" CorrelationBinding="{{QueryStringParam8690.oid}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ref" Value="{{WebServer6}}%2F%3Fguccounter%3D1" RecordedValue="https%3A%2F%2Fmovies.yahoo.com.tw%2F%3Fguccounter%3D1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="loc" Value="{{WebServer6}}%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" RecordedValue="https%3A%2F%2Fmovies.yahoo.com.tw%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rx" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="eae" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fc" Value="912" RecordedValue="912" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="docm" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="brdim" Value="678%2C125%2C0%2C0%2C2182%2C%2C2182%2C1103%2C1491%2C966" RecordedValue="678%2C125%2C0%2C0%2C2182%2C%2C2182%2C1103%2C1491%2C966" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="vis" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rsz" Value="%7C%7CoeEbr%7C" RecordedValue="%7C%7CoeEbr%7C" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="abl" Value="CS" RecordedValue="CS" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="pfx" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="fu" Value="16" RecordedValue="16" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="bc" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="ifi" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="uci" Value="a!1" RecordedValue="a!1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="dtd" Value="151" RecordedValue="151" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="49947769-e1dc-4c12-8df0-ce43a40a00cf" Version="1.1" Url="{{WebServer14}}/sync/pubmatic/1FD1C5E6-506F-4910-A703-DE7DA63A28CD" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="{{WebServer15}}/AdServer/js/showad.js" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="9ff58b5e-0e63-4a64-9907-ff1a6005bb11" Version="1.1" Url="{{WebServer16}}/pagead/s/cookie_push.html" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="{{WebServer10}}/pagead/ads?client=ca-pub-6785382607161389&amp;output=html&amp;h=250&amp;slotname=5366616521&amp;adk=478338560&amp;adf=2844852103&amp;w=300&amp;lmt=1563690357&amp;guci=2.2.0.0.2.2.0.0&amp;format=300x250&amp;url={{WebServer6}}%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28&amp;ea=0&amp;flash=32.0.0&amp;hl=zh-tw&amp;avail_w=300&amp;wgl=1&amp;dt=1563690357371&amp;bpp=51&amp;bdt=2824&amp;fdt=112&amp;idt=112&amp;shv=r20190715&amp;cbv=r20190131&amp;saldr=aa&amp;abxe=1&amp;correlator=5501723727073&amp;frm=20&amp;pv=2&amp;ga_vid=428893641.1563690133&amp;ga_sid=1563690358&amp;ga_hid=1395431867&amp;ga_fc=0&amp;icsg=176451633360&amp;dssz=35&amp;mdo=0&amp;mso=33554434&amp;u_tz=480&amp;u_his=4&amp;u_java=1&amp;u_h=1227&amp;u_w=2182&amp;u_ah=1159&amp;u_aw=2182&amp;u_cd=24&amp;u_nplug=1&amp;u_nmime=2&amp;adx=1046&amp;ady=1502&amp;biw=1462&amp;bih=966&amp;scr_x=0&amp;scr_y=0&amp;eid=151527002%2C151527011%2C151527211&amp;oid=2&amp;ref={{WebServer6}}%2F%3Fguccounter%3D1&amp;loc={{WebServer6}}%2Fmovietime_result.html%3Fmovie_id%3D9116%26area_id%3D28&amp;rx=0&amp;eae=1&amp;fc=912&amp;docm=11&amp;brdim=678%2C125%2C0%2C0%2C2182%2C%2C2182%2C1103%2C1491%2C966&amp;vis=1&amp;rsz=%7C%7CoeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=16&amp;bc=1&amp;ifi=1&amp;uci=a!1&amp;dtd=151" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="d64664ea-e61e-406a-a999-9b5511031514" Version="1.1" Url="{{WebServer17}}/pixel/attr" ThinkTime="31" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="{{WebServer16}}/pagead/s/cookie_push.html" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="d" Value="AHNF13IbetoYjPten4FHsQGmPU93UF3BUIbI" RecordedValue="AHNF13IbetoYjPten4FHsQGmPU93UF3BUIbI" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Comment CommentText="input 電影時刻 獅子王 台北 查詢" />
+    <Request Method="POST" Guid="20438054-ac50-4395-9bbe-62f3acae4503" Version="1.1" Url="{{WebServer12}}/ajax/bz" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="{{WebServer12}}/plugins/page.php?href={{WebServer13}}%2FYmovie%2F&amp;tabs=timeline&amp;width=300&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=762279463943866" />
+        <Header Name="Test" Value="123" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__a" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam64.__a}}" UrlEncode="True" />
+        <FormPostParameter Name="__be" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam65.__be}}" UrlEncode="True" />
+        <FormPostParameter Name="__dyn" Value="7xe6HzE4e5Q2m3mbGexPLFwRwQwQwAxu13wmE8EKewSAwHxW4E2czobo7WU3rx61cwYwmWw5SCwSxu0OE2WxO2u0IobEa85ucG0nSUS1vw9W1PwBgK7o1mUbEaojw" RecordedValue="7xe6HzE4e5Q2m3mbGexPLFwRwQwQwAxu13wmE8EKewSAwHxW4E2czobo7WU3rx61cwYwmWw5SCwSxu0OE2WxO2u0IobEa85ucG0nSUS1vw9W1PwBgK7o1mUbEaojw" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__pc" Value="PHASED:plugin_default_pkg" RecordedValue="PHASED:plugin_default_pkg" CorrelationBinding="{{FormPostParam66.__pc}}" UrlEncode="True" />
+        <FormPostParameter Name="__req" Value="4" RecordedValue="4" CorrelationBinding="{{FormPostParam67.__req}}" UrlEncode="True" />
+        <FormPostParameter Name="__rev" Value="1000964653" RecordedValue="1000964653" CorrelationBinding="{{FormPostParam68.__rev}}" UrlEncode="True" />
+        <FormPostParameter Name="__s" Value="::zx1dp7" RecordedValue="::zx1dp7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__sp" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam69.__sp}}" UrlEncode="True" />
+        <FormPostParameter Name="__user" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam70.__user}}" UrlEncode="True" />
+        <FormPostParameter Name="dpr" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam71.dpr}}" UrlEncode="True" />
+        <FormPostParameter Name="ph" Value="C3" RecordedValue="C3" CorrelationBinding="{{FormPostParam72.ph}}" UrlEncode="True" />
+        <FormPostParameter Name="q" Value="[{&quot;user&quot;:&quot;0&quot;,&quot;webSessionId&quot;:&quot;::zx1dp7&quot;,&quot;posts&quot;:[[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729629&quot;,&quot;hash&quot;:&quot;AT7l4YwaAAAtU8eb&quot;},1563690356779.7387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.1386,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.439,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.5388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.7387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa1ukwpi_bEtmmVX820O2Y2PR1DWvGk_CKSYmYWiH4uCbOvrVij5QxblTD-X-iUz6Ay_ZlfdjJxfCLKT0EmG&quot;},1563690356780.8388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.9387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356781.1386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729630&quot;,&quot;hash&quot;:&quot;AT5vezNQFFXI00vR&quot;},1563690356781.3386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729631&quot;,&quot;hash&quot;:&quot;AT4OFkMS4VOu-VkU&quot;},1563690356781.4387,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729632&quot;,&quot;hash&quot;:&quot;AT6Szdpn9dY6x6xw&quot;},1563690356781.639,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729633&quot;,&quot;hash&quot;:&quot;AT6dFGU5wFFiAupP&quot;},1563690356781.8388,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;934630&quot;,&quot;hash&quot;:&quot;AT5zpEmZmrqRps64&quot;},1563690356781.939,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;972776&quot;,&quot;hash&quot;:&quot;AT4xcxNetxgE-t7X&quot;},1563690356782.2387,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;678674&quot;,&quot;hash&quot;:&quot;AT6S_ZwjrAKfULlp&quot;},1563690356790.239,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa0td83KwTKi6Xa8UJrJhgnNU00MCNSfFLsWhQW7S8w2rD5M0PJpGaOB77gqwdfsSZALAwrX8UC7uQ&quot;},1563690356790.439,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa2VT7otDQXErQLfvRZP0RlqwE7cUEXfNPU5w_TJ2_SBWezZMKcQtu4pDfYdP3nlHvX6HOPsvb_8rauUwCCaah9l1cTUkw&quot;},1563690356790.639,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa0td83KwTKi6Xa8UJrJhgnNU00MCNSfFLsWhQW7S8w2rD5M0PJpGaOB77gqwdfsSZALAwrX8UC7uQ&quot;},1563690356790.8388,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;678686&quot;,&quot;hash&quot;:&quot;AT5Bh1cJ-7iqI8jJ&quot;},1563690356802.3388,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;938344&quot;,&quot;hash&quot;:&quot;AT5ecZqPKl_0KYZ6&quot;},1563690356803.639,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;811372&quot;,&quot;hash&quot;:&quot;AT550fJU6sL37UC1&quot;},1563690356806.039,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;820050&quot;,&quot;hash&quot;:&quot;AT71tfsUwvO1qLRK&quot;},1563690359047.0388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.2387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.3386,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.4387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.639,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.8388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.939,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359048.139,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;901547&quot;,&quot;hash&quot;:&quot;AT6VS__wr59irfqg&quot;},1563690359051.539,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;833732&quot;,&quot;hash&quot;:&quot;AT6EM9Bi9yl35csH&quot;},1563690359057.6386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;962503&quot;,&quot;hash&quot;:&quot;AT47fDpC4NHIOVCG&quot;},1563690359057.939,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;940796&quot;,&quot;hash&quot;:&quot;AT5mDEQjJqoa4ZFw&quot;},1563690359066.8388,0],[&quot;xtrackable:clientview_batch&quot;,{&quot;xt&quot;:&quot;AZUWkz3woUn7wFUvrH5Tvfizf7RamnEq10No-km8CgwLKtyCji5S6cJslmgkH_8VciF_tq1B7uyTNj2XZABfdLzHCv9FDm6j5PV_lIszi2q64DLDdBGo7UsC3UFozroWLo7ZLuDkABLEbvZbV2bYGwnmYOV8YU2plEtokj_rnvH_EmQFt-zfvbZY6sSFHOv4YTRQw5GDk9bkIO43NALCiGwJPcMziEt_H6FN5d4aZo3EZoLWS-hqeavgzc_Lq7ns8p0Vh03ievjkhoMXt6qd29XAquHokD9TIprRC93V9lKoiEjHLsVix9a3FT1Nf5DAj2W-MRcD6vEQafJB6EHwEg-kXNhJieij5xp7Lz0tgARORzd_TO38ExUTAZkRs4OB_wrDN5dWu1bzsbUd6U5jRPAVrJjZlwsTdah6r8LMjH2_VFRQk3StNSZvArsJQsibX2aaDZjYu6wkwYvoaHV718ToQWjwuVQYgqypW2BtqEcNtsr3Pwq-b1ZiO4UHs7G5PkfT5TU79mCB7fG8mOUdjQaAwU8RfTmxoM3OKsPrljNlvUdBCzUrKSeW-rnJO4vku4xA4Bu1w4Za2SRTCBG3VFh2LUn69R5f485Fysn3qEmzd3UCpfwP4lJUTdhQOjcDH0i_4vJkbShzuVb32x1RGwrzs9c_51vIxqrLfyUpGDykKj_Su_IDG2M7pgGxY8R6eY2WQfIrP_pqhKDIrssvHyi_7LR5dNXpASVNDkiTAOFJjudioSHxjRONzq8s-8x-OLV4htb5geFggAwki-MYiDXhU_ko9mnqcGIaMxhEpvl865gefCiiy3d9-yk53YlfDJ6Qu03xA8y_NoQ5T41VTM1-EudvefzzdJHQaBcN2ijGAK_WmEyGBGZdTHnUA6gCOU-wpxpXxhJ_-68yMpmz5B8y-RODqj8OfwoaQ8lo--j-hw&quot;,&quot;isv&quot;:1,&quot;cts&quot;:1563690359,&quot;csp&quot;:null,&quot;hba&quot;:false,&quot;etid&quot;:&quot;1563690359066_4125879798&quot;,&quot;sender&quot;:&quot;ViewableImpressionTracker&quot;,&quot;transmission_channel&quot;:&quot;banzai&quot;,&quot;event&quot;:&quot;client_view&quot;},1563690359067.2387,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;985099&quot;,&quot;hash&quot;:&quot;AT6hWQ0HemqN2_do&quot;},1563690359073.1386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;876709&quot;,&quot;hash&quot;:&quot;AT70M-WiTeSqR93L&quot;},1563690359073.539,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;952891&quot;,&quot;hash&quot;:&quot;AT44eEzDFxdXiLTo&quot;},1563690359092.4387,0],[&quot;page_custom_cta_logger&quot;,{&quot;ccta_id&quot;:&quot;1335666503143647&quot;,&quot;ccta_type&quot;:&quot;WATCH_NOW&quot;,&quot;event_type&quot;:&quot;custom_cta_show_viewer_unit&quot;,&quot;page_id&quot;:&quot;161527590557550&quot;,&quot;surface&quot;:&quot;pagePlugin&quot;,&quot;target_url&quot;:&quot;https://l.facebook.com/l.php?u=https%3A%2F%2Ftw.movies.yahoo.com%2Ftrailer_index.html&amp;h=AT26ZaQr_A_q1WCXWzZ9Px3QU2mjIHL54XjnFg3d8619n8tIP1S3fK0F-d8pLNgyIHKUR9E7zGWFTKdVeUa6xDgapqik7NcSrNuzI5qvTQ9GQQKxdQ69kzDWrBFoQeoN6T4-rG0u8IxvNSefCFyrzncoRVWTBM_n2zw&quot;},1563690359092.739,0],[&quot;categorized_ods&quot;,{&quot;2966&quot;:{&quot;core.www.react_component_register_unmount&quot;:{&quot;arbiter.default&quot;:[7]},&quot;ghl&quot;:{&quot;tubt.init&quot;:[1],&quot;tubt.done.false.false.gk-false&quot;:[1],&quot;tubt.time.gk-false.false.0&quot;:[1]}}},1563690416782.3388,0]],&quot;trigger&quot;:&quot;categorized_ods&quot;,&quot;send_method&quot;:&quot;ajax&quot;},{&quot;webSessionId&quot;:&quot;::zx1dp7&quot;,&quot;posts&quot;:[[&quot;categorized_ods&quot;,{&quot;2979&quot;:{&quot;banzai&quot;:{&quot;blue_messages_received&quot;:[39]}}},1563690416782.8386,0]],&quot;user&quot;:&quot;0&quot;},{&quot;webSessionId&quot;:&quot;::zx1dp7&quot;,&quot;posts&quot;:[[&quot;categorized_ods&quot;,{&quot;2979&quot;:{&quot;banzai&quot;:{&quot;blue_messages_sent&quot;:[40]}}},1563690416782.939,0]],&quot;user&quot;:&quot;0&quot;}]" RecordedValue="[{&quot;user&quot;:&quot;0&quot;,&quot;webSessionId&quot;:&quot;::zx1dp7&quot;,&quot;posts&quot;:[[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729629&quot;,&quot;hash&quot;:&quot;AT7l4YwaAAAtU8eb&quot;},1563690356779.7387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.1386,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.439,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.5388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.7387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa1ukwpi_bEtmmVX820O2Y2PR1DWvGk_CKSYmYWiH4uCbOvrVij5QxblTD-X-iUz6Ay_ZlfdjJxfCLKT0EmG&quot;},1563690356780.8388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356780.9387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690356781.1386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729630&quot;,&quot;hash&quot;:&quot;AT5vezNQFFXI00vR&quot;},1563690356781.3386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729631&quot;,&quot;hash&quot;:&quot;AT4OFkMS4VOu-VkU&quot;},1563690356781.4387,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729632&quot;,&quot;hash&quot;:&quot;AT6Szdpn9dY6x6xw&quot;},1563690356781.639,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;729633&quot;,&quot;hash&quot;:&quot;AT6dFGU5wFFiAupP&quot;},1563690356781.8388,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;934630&quot;,&quot;hash&quot;:&quot;AT5zpEmZmrqRps64&quot;},1563690356781.939,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;972776&quot;,&quot;hash&quot;:&quot;AT4xcxNetxgE-t7X&quot;},1563690356782.2387,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;678674&quot;,&quot;hash&quot;:&quot;AT6S_ZwjrAKfULlp&quot;},1563690356790.239,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa0td83KwTKi6Xa8UJrJhgnNU00MCNSfFLsWhQW7S8w2rD5M0PJpGaOB77gqwdfsSZALAwrX8UC7uQ&quot;},1563690356790.439,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa2VT7otDQXErQLfvRZP0RlqwE7cUEXfNPU5w_TJ2_SBWezZMKcQtu4pDfYdP3nlHvX6HOPsvb_8rauUwCCaah9l1cTUkw&quot;},1563690356790.639,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa0td83KwTKi6Xa8UJrJhgnNU00MCNSfFLsWhQW7S8w2rD5M0PJpGaOB77gqwdfsSZALAwrX8UC7uQ&quot;},1563690356790.8388,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;678686&quot;,&quot;hash&quot;:&quot;AT5Bh1cJ-7iqI8jJ&quot;},1563690356802.3388,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;938344&quot;,&quot;hash&quot;:&quot;AT5ecZqPKl_0KYZ6&quot;},1563690356803.639,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;811372&quot;,&quot;hash&quot;:&quot;AT550fJU6sL37UC1&quot;},1563690356806.039,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;820050&quot;,&quot;hash&quot;:&quot;AT71tfsUwvO1qLRK&quot;},1563690359047.0388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.2387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.3386,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.4387,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.639,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.8388,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359047.939,0],[&quot;require_cond_exposure_logging&quot;,{&quot;identifier&quot;:&quot;Aa3h_QgEfo0lAuq9AaGn-HXFl8F1_H7y1WdzYWf6C4TKFZG7hwKVPYigFNlrRlm0SA8oeGCkb2Pf4KIGS6ZKiQc&quot;},1563690359048.139,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;901547&quot;,&quot;hash&quot;:&quot;AT6VS__wr59irfqg&quot;},1563690359051.539,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;833732&quot;,&quot;hash&quot;:&quot;AT6EM9Bi9yl35csH&quot;},1563690359057.6386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;962503&quot;,&quot;hash&quot;:&quot;AT47fDpC4NHIOVCG&quot;},1563690359057.939,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;940796&quot;,&quot;hash&quot;:&quot;AT5mDEQjJqoa4ZFw&quot;},1563690359066.8388,0],[&quot;xtrackable:clientview_batch&quot;,{&quot;xt&quot;:&quot;AZUWkz3woUn7wFUvrH5Tvfizf7RamnEq10No-km8CgwLKtyCji5S6cJslmgkH_8VciF_tq1B7uyTNj2XZABfdLzHCv9FDm6j5PV_lIszi2q64DLDdBGo7UsC3UFozroWLo7ZLuDkABLEbvZbV2bYGwnmYOV8YU2plEtokj_rnvH_EmQFt-zfvbZY6sSFHOv4YTRQw5GDk9bkIO43NALCiGwJPcMziEt_H6FN5d4aZo3EZoLWS-hqeavgzc_Lq7ns8p0Vh03ievjkhoMXt6qd29XAquHokD9TIprRC93V9lKoiEjHLsVix9a3FT1Nf5DAj2W-MRcD6vEQafJB6EHwEg-kXNhJieij5xp7Lz0tgARORzd_TO38ExUTAZkRs4OB_wrDN5dWu1bzsbUd6U5jRPAVrJjZlwsTdah6r8LMjH2_VFRQk3StNSZvArsJQsibX2aaDZjYu6wkwYvoaHV718ToQWjwuVQYgqypW2BtqEcNtsr3Pwq-b1ZiO4UHs7G5PkfT5TU79mCB7fG8mOUdjQaAwU8RfTmxoM3OKsPrljNlvUdBCzUrKSeW-rnJO4vku4xA4Bu1w4Za2SRTCBG3VFh2LUn69R5f485Fysn3qEmzd3UCpfwP4lJUTdhQOjcDH0i_4vJkbShzuVb32x1RGwrzs9c_51vIxqrLfyUpGDykKj_Su_IDG2M7pgGxY8R6eY2WQfIrP_pqhKDIrssvHyi_7LR5dNXpASVNDkiTAOFJjudioSHxjRONzq8s-8x-OLV4htb5geFggAwki-MYiDXhU_ko9mnqcGIaMxhEpvl865gefCiiy3d9-yk53YlfDJ6Qu03xA8y_NoQ5T41VTM1-EudvefzzdJHQaBcN2ijGAK_WmEyGBGZdTHnUA6gCOU-wpxpXxhJ_-68yMpmz5B8y-RODqj8OfwoaQ8lo--j-hw&quot;,&quot;isv&quot;:1,&quot;cts&quot;:1563690359,&quot;csp&quot;:null,&quot;hba&quot;:false,&quot;etid&quot;:&quot;1563690359066_4125879798&quot;,&quot;sender&quot;:&quot;ViewableImpressionTracker&quot;,&quot;transmission_channel&quot;:&quot;banzai&quot;,&quot;event&quot;:&quot;client_view&quot;},1563690359067.2387,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;985099&quot;,&quot;hash&quot;:&quot;AT6hWQ0HemqN2_do&quot;},1563690359073.1386,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;876709&quot;,&quot;hash&quot;:&quot;AT70M-WiTeSqR93L&quot;},1563690359073.539,0],[&quot;gk2_exposure&quot;,{&quot;identifier&quot;:&quot;952891&quot;,&quot;hash&quot;:&quot;AT44eEzDFxdXiLTo&quot;},1563690359092.4387,0],[&quot;page_custom_cta_logger&quot;,{&quot;ccta_id&quot;:&quot;1335666503143647&quot;,&quot;ccta_type&quot;:&quot;WATCH_NOW&quot;,&quot;event_type&quot;:&quot;custom_cta_show_viewer_unit&quot;,&quot;page_id&quot;:&quot;161527590557550&quot;,&quot;surface&quot;:&quot;pagePlugin&quot;,&quot;target_url&quot;:&quot;https://l.facebook.com/l.php?u=https%3A%2F%2Ftw.movies.yahoo.com%2Ftrailer_index.html&amp;h=AT26ZaQr_A_q1WCXWzZ9Px3QU2mjIHL54XjnFg3d8619n8tIP1S3fK0F-d8pLNgyIHKUR9E7zGWFTKdVeUa6xDgapqik7NcSrNuzI5qvTQ9GQQKxdQ69kzDWrBFoQeoN6T4-rG0u8IxvNSefCFyrzncoRVWTBM_n2zw&quot;},1563690359092.739,0],[&quot;categorized_ods&quot;,{&quot;2966&quot;:{&quot;core.www.react_component_register_unmount&quot;:{&quot;arbiter.default&quot;:[7]},&quot;ghl&quot;:{&quot;tubt.init&quot;:[1],&quot;tubt.done.false.false.gk-false&quot;:[1],&quot;tubt.time.gk-false.false.0&quot;:[1]}}},1563690416782.3388,0]],&quot;trigger&quot;:&quot;categorized_ods&quot;,&quot;send_method&quot;:&quot;ajax&quot;},{&quot;webSessionId&quot;:&quot;::zx1dp7&quot;,&quot;posts&quot;:[[&quot;categorized_ods&quot;,{&quot;2979&quot;:{&quot;banzai&quot;:{&quot;blue_messages_received&quot;:[39]}}},1563690416782.8386,0]],&quot;user&quot;:&quot;0&quot;},{&quot;webSessionId&quot;:&quot;::zx1dp7&quot;,&quot;posts&quot;:[[&quot;categorized_ods&quot;,{&quot;2979&quot;:{&quot;banzai&quot;:{&quot;blue_messages_sent&quot;:[40]}}},1563690416782.939,0]],&quot;user&quot;:&quot;0&quot;}]" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ts" Value="1563690416789" RecordedValue="1563690416789" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ContextParameters>
+    <ContextParameter Name="URL" Value="https://movies.yahoo.com.tw" />
+    <ContextParameter Name="WebServer10" Value="https://googleads.g.doubleclick.net" />
+    <ContextParameter Name="WebServer11" Value="https://ads.yahoo.com" />
+    <ContextParameter Name="WebServer12" Value="https://www.facebook.com" />
+    <ContextParameter Name="WebServer13" Value="https%3A%2F%2Fwww.facebook.com" />
+    <ContextParameter Name="WebServer14" Value="https://pr-bh.ybp.yahoo.com" />
+    <ContextParameter Name="WebServer15" Value="https://ads.pubmatic.com" />
+    <ContextParameter Name="WebServer16" Value="https://pagead2.googlesyndication.com" />
+    <ContextParameter Name="WebServer17" Value="https://cm.g.doubleclick.net" />
+    <ContextParameter Name="WebServer2" Value="https://guce.yahoo.com.tw" />
+    <ContextParameter Name="WebServer3" Value="https://fc.yahoo.com" />
+    <ContextParameter Name="WebServer4" Value="https://udc.yahoo.com" />
+    <ContextParameter Name="WebServer5" Value="https://ads.yap.yahoo.com" />
+    <ContextParameter Name="WebServer6" Value="https%3A%2F%2Fmovies.yahoo.com.tw" />
+    <ContextParameter Name="WebServer7" Value="https://s.yimg.com" />
+    <ContextParameter Name="WebServer8" Value="https://staticxx.facebook.com" />
+    <ContextParameter Name="WebServer9" Value="https://oao-js-tag.onemobile.yahoo.com" />
+  </ContextParameters>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
